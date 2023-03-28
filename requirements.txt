@@ -1,0 +1,8 @@
+Django
+llama_index
+langchain
+python-dotenv
+PyPDF2
+djangorestframework
+djangorestframework-simplejwt
+django-cors-headers
