@@ -6,6 +6,8 @@ SECRET_KEY = "django-insecure-f^*jh@!af&oad=fag-!a7^1=9)oa^d8mn!*u$a^a-+izjsh@13
 
 DEBUG = True
 
+CSRF_TRUSTED_ORIGINS = ["https://sweetspot.ga"]
+
 ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
