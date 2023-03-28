@@ -7,4 +7,6 @@ admin.site.unregister(User)
 admin.site.unregister(Group)
 admin.site.register(Pragma)
 
-admin.site.add_action(chat_bot_index.refresh_model, "Refresh Model")
+admin.site.add_action(
+    lambda *args, **kwargs: chat_bot_index.refresh_model(), "Refresh Model"
+)
