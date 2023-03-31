@@ -10,5 +10,7 @@ class ChatBotIndexView(APIView):
 
     def post(self, request):
         question = request.data["question"]
-        response = chat_bot_index.instance.query(question)
+        response = chat_bot_index.instance.query(
+            question + ". Página y documento donde puedo encontrar esta información."
+        )
         return Response({"response": response.__str__().strip()})
